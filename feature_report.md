@@ -1,19 +1,97 @@
+# 🚀 Feature Request
+
+## Summary
+
+Provide a short and clear summary of the feature request.
+
+Example:
+
+> Reduce robot boot time by parallelizing sensor initialization.
+
 ---
-name: 🚀 Feature Request
-about: Suggest a new optimization or feature for the robot startup.
-title: '[FEATURE] '
-labels: 'type: enhancement'
-assignees: ''
+
+## Problem Statement
+
+Describe the current problem or limitation.
+
+* What is happening today?
+* Why is it inefficient or frustrating?
+* Who is affected?
+
+Example:
+
+> The LiDAR initialization process blocks the startup sequence for ~30 seconds, delaying autonomous mode activation.
+
 ---
 
-**Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. (e.g., "The robot takes 30 seconds to initialize the LiDAR, I want it faster.")
+## Proposed Solution
 
-**Describe the solution you'd like**
-A clear and concise description of what you want to happen.
+Describe the solution you would like to see.
 
-**Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or features you've considered.
+Include:
 
-**Additional Context**
-Add any other context or screenshots about the feature request here.
+* Expected behavior
+* Technical ideas (optional)
+* UX/API changes (if applicable)
+
+Example:
+
+> Initialize LiDAR asynchronously while other subsystems boot in parallel.
+
+---
+
+## Alternatives Considered
+
+Describe any alternative approaches you considered.
+
+Example:
+
+* Lazy-loading sensors
+* Reducing calibration frequency
+* Hardware-side caching
+
+---
+
+## Expected Impact
+
+What benefits would this feature provide?
+
+* Faster performance
+* Better reliability
+* Improved developer experience
+* Reduced operational cost
+* Safer robot behavior
+
+---
+
+## Acceptance Criteria
+
+Define what must be true for this feature to be considered complete.
+
+* [ ] Feature implemented
+* [ ] Unit/integration tests added
+* [ ] Documentation updated
+* [ ] No regression in startup stability
+
+---
+
+## Additional Context
+
+Add any additional information here.
+
+* Screenshots
+* Logs
+* Architecture diagrams
+* Benchmarks
+* Related issues or PRs
+
+---
+
+## Related Issues
+
+Link related GitHub issues or pull requests.
+
+Example:
+
+* #42
+* #108
